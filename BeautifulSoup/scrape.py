@@ -4,7 +4,7 @@ import csv
 
 source = requests.get('http://coreyms.com').text
 
-soup = BeautifulSoup(source, 'lxml')
+soup = BeautifulSoup(source, 'html-parser')
 
 csv_file = open('cms_scrape.csv', 'w')
 
